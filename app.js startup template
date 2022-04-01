@@ -4,6 +4,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const mongoose = require('mongoose');
+const port = 3000;
 
 const app = express();
 
@@ -24,6 +25,6 @@ const collectionModelName = mongoose.model("collectionName",collectionNameSchema
 
 //TODO
 
-app.listen(3000, function() {
-  console.log("Server started on port 3000");
+app.listen(port, function() {
+  console.log("Server started on port "+ port);
 });
